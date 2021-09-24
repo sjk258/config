@@ -5,9 +5,4 @@ function git_branch() {
     fi
 }
 
-# Set the prompt with colors (and git branch if applicable)
-function bash_prompt(){
-    PS1='${debian_chroot:+($debian_chroot)}'${blu}'$(git_branch)'${pur}' \W'${grn}' \$ '${clr}
-}
-
-bash_prompt
+export PS1="\[\033[38;5;2m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;5m\]:\[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;14m\]\$(git_branch)\[$(tput sgr0)\]\n\[$(tput sgr0)\]"

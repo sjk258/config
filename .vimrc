@@ -29,7 +29,8 @@ set hlsearch
 set history=1000
 
 " Set the colorscheme
-:colorscheme molokai
+" :colorscheme molokai
+colorscheme desert
 
 " STATUS LINE ------------------------------------------------------------ {{{
 
@@ -48,4 +49,3 @@ set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 " Show the status on the second to last line.
 set laststatus=2
 
-" }}}
