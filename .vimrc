@@ -27,10 +27,11 @@ set showmatch
 set hlsearch
 " Set the commands to save in history default number is 20.
 set history=1000
+set number
 
 " Set the colorscheme
 " :colorscheme molokai
-colorscheme desert
+" colorscheme desert
 
 " STATUS LINE ------------------------------------------------------------ {{{
 
